@@ -19,10 +19,14 @@
   width: 40px;
   background-color: rgb(81 183 255 / 33%);
 }
+
 .list {
   padding: 0;
   margin: 0;
+  max-height: 400px;
+  overflow-y: scroll;
 }
+
 .list_item {
   line-height: 24px;
   font-size: 20px;
