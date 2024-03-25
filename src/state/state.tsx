@@ -35,13 +35,13 @@ export class State {
   remove_item(item: number | TItem) {
     if (typeof item === "number") {
       this.signals.set_store("list", (items) =>
-        items.filter((_, ind) => ind !== item)
+        items.filter((_, ind) => ind !== item),
       );
     }
 
     if (typeof item === "string") {
       this.signals.set_store("list", (items) =>
-        items.filter((str) => !str.toLowerCase().includes(item.toLowerCase()))
+        items.filter((str) => !str.toLowerCase().includes(item.toLowerCase())),
       );
     }
   }
